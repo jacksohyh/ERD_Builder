@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\popup\\nameproject.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:view\\popup\\nameproject.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\popup\\nameproject.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:view\\popup\\nameproject.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +26,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NameProject.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\Popup\\NameProject.xaml.cs",
+              "RelativeDocumentMoniker": "View\\Popup\\NameProject.xaml.cs",
+              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\Popup\\NameProject.xaml.cs",
+              "RelativeToolTip": "View\\Popup\\NameProject.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T11:30:11.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NameProject.xaml",
+              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\Popup\\NameProject.xaml",
+              "RelativeDocumentMoniker": "View\\Popup\\NameProject.xaml",
+              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\Popup\\NameProject.xaml",
+              "RelativeToolTip": "View\\Popup\\NameProject.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T11:20:40.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\MainWindow.xaml",
+              "RelativeToolTip": "View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-25T05:22:33.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\MainWindow.xaml.cs",
+              "RelativeToolTip": "View\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIAwwCIAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T05:22:29.924Z",
               "EditorCaption": ""
