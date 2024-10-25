@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERD_Builder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a2cae769737bc306490510ec31f5c435da63fb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18bcfc84162a92ce385448a59c5f2543f27447dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERD_Builder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERD_Builder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

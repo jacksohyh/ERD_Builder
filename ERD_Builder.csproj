@@ -11,6 +11,7 @@
   <ItemGroup>
     <Folder Include="ViewModel\" />
     <Folder Include="Model\" />
+    <Folder Include="View\Page\" />
   </ItemGroup>
 
   <ItemGroup>
