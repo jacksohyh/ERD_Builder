@@ -1,0 +1,27 @@
+﻿<Window x:Class="ERD_Builder.View.ProjectPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding projectName}" WindowState="Maximized">
+
+    <Grid>
+        <!-- Main Border around Canvas -->
+        <Border BorderBrush="Gray" BorderThickness="2" Name="ResizableBorder">
+            <!-- Main Canvas for drawing elements -->
+            <Canvas Name="ERDCanvas" Background="LightGray">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform x:Name="CanvasScaleTransform" ScaleX="1.0" ScaleY="1.0"/>
+                        <TranslateTransform x:Name="CanvasTranslateTransform" />
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+
+                <!-- Context menu for adding tables -->
+                <Canvas.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Add New Table" Click="AddTable_Click"/>
+                    </ContextMenu>
+                </Canvas.ContextMenu>
+            </Canvas>
+        </Border>
+    </Grid>
+</Window>

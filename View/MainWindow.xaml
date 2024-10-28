@@ -55,16 +55,13 @@
                     Click="NewProjectButton_Click"/>
         </Grid>
 
-        <!-- Preview Area -->
-        <Border Grid.Column="1" 
-                Grid.Row="1" 
-                BorderThickness="1" 
-                BorderBrush="Black" 
-                Margin="5">
-            <TextBlock Text="{Binding SelectedProject}" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center"/>
-        </Border>
+        <!-- Navigation Frame for Preview Area -->
+        <Frame Name="projectPage" 
+               Grid.Column="1" 
+               Grid.Row="1" 
+               BorderThickness="1" 
+               BorderBrush="Black" 
+               Margin="5" 
+               NavigationUIVisibility="Hidden"/>
     </Grid>
-
 </Window>
