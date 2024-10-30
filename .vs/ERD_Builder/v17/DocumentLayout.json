@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\projectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:view\\projectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\projectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:view\\projectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\converters\\offsetconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:converters\\offsetconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\viewmodel\\projectpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:viewmodel\\projectpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\projectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|solutionrelative:view\\projectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{974E0B4E-9060-4A75-AEE9-B3B0DC8A3112}|ERD_Builder.csproj|c:\\users\\jack\\documents\\projects\\csharp\\erd_builder\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -38,24 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OffsetConverter.cs",
-              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\Converters\\OffsetConverter.cs",
-              "RelativeDocumentMoniker": "Converters\\OffsetConverter.cs",
-              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\Converters\\OffsetConverter.cs",
-              "RelativeToolTip": "Converters\\OffsetConverter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProjectPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\ViewModel\\ProjectPageViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ProjectPageViewModel.cs",
+              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\ViewModel\\ProjectPageViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ProjectPageViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T06:08:33.831Z",
+              "WhenOpened": "2024-10-28T05:19:35.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProjectPage.xaml",
               "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\ProjectPage.xaml",
               "RelativeDocumentMoniker": "View\\ProjectPage.xaml",
@@ -67,33 +63,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\ViewModel\\ProjectPageViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\ProjectPageViewModel.cs",
-              "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\ViewModel\\ProjectPageViewModel.cs",
-              "RelativeToolTip": "ViewModel\\ProjectPageViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:19:35.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ProjectPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\ProjectPage.xaml.cs",
               "RelativeDocumentMoniker": "View\\ProjectPage.xaml.cs",
               "ToolTip": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\ProjectPage.xaml.cs",
               "RelativeToolTip": "View\\ProjectPage.xaml.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAkwBgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAApwIEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T05:14:20.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "View\\MainWindow.xaml",
@@ -105,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "View\\MainWindow.xaml.cs",
@@ -118,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jack\\Documents\\Projects\\CSharp\\ERD_Builder\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",

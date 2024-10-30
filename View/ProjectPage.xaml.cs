@@ -102,94 +102,127 @@ namespace ERD_Builder.View
 
         //===========================END ZOOM and PANNING============================
 
-        //===========================START Canvas resize============================
-
-        private void ResizeHandle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if (sender is Rectangle handle)
-            {
-                _isResizing = true;
-                _resizeStartPoint = e.GetPosition(this);
-                _resizeDirection = handle.Name;
-                handle.CaptureMouse();
-            }
-        }
-
-        private void ResizeHandle_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (_isResizing)
-            {
-                Point currentPoint = e.GetPosition(this);
-                double offsetX = currentPoint.X - _resizeStartPoint.X;
-                double offsetY = currentPoint.Y - _resizeStartPoint.Y;
-
-                switch (_resizeDirection)
-                {
-                    case "LeftResizeHandle":
-                        ERDCanvas.Width = Math.Max(50, ERDCanvas.Width - offsetX);
-                        Canvas.SetLeft(ERDCanvas, Canvas.GetLeft(ERDCanvas) + offsetX);
-                        break;
-                    case "RightResizeHandle":
-                        ERDCanvas.Width = Math.Max(50, ERDCanvas.Width + offsetX);
-                        break;
-                    case "TopResizeHandle":
-                        ERDCanvas.Height = Math.Max(50, ERDCanvas.Height - offsetY);
-                        Canvas.SetTop(ERDCanvas, Canvas.GetTop(ERDCanvas) + offsetY);
-                        break;
-                    case "BottomResizeHandle":
-                        ERDCanvas.Height = Math.Max(50, ERDCanvas.Height + offsetY);
-                        break;
-                    case "BottomRightResizeHandle":
-                        ERDCanvas.Width = Math.Max(50, ERDCanvas.Width + offsetX);
-                        ERDCanvas.Height = Math.Max(50, ERDCanvas.Height + offsetY);
-                        break;
-                }
-
-                _resizeStartPoint = currentPoint;
-            }
-        }
-
-        private void ResizeHandle_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-            if (_isResizing)
-            {
-                _isResizing = false;
-                _resizeDirection = null;
-                if (sender is Rectangle handle)
-                {
-                    handle.ReleaseMouseCapture();
-                }
-            }
-        }
-
-        //===========================END Canvas resize============================
 
         private void AddTable_Click(object sender, RoutedEventArgs e)
         {
+            // Create the main table container as a Border
             Border table = new Border
             {
-                Width = 100,
-                Height = 50,
+                Width = 200,
+                Height = 120,
                 Background = Brushes.White,
                 BorderBrush = Brushes.Black,
+                BorderThickness = new Thickness(1)
+            };
+
+            // Create a Grid to hold the header and columns within the table
+            Grid tableGrid = new Grid();
+            table.Child = tableGrid;
+
+            // Define rows: header row and two data rows
+            tableGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });  // Header
+            tableGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });  // Data Row 1
+            tableGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });  // Data Row 2
+
+            // Define two columns for the data rows
+            tableGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            tableGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+
+            // Add header
+            Border header = new Border
+            {
+                BorderBrush = Brushes.Black,
                 BorderThickness = new Thickness(1),
+                Background = Brushes.LightGray,
+                Padding = new Thickness(5),
                 Child = new TextBlock
                 {
-                    Text = "New Table",
+                    Text = "Table Name",
+                    FontWeight = FontWeights.Bold,
                     HorizontalAlignment = HorizontalAlignment.Center,
                     VerticalAlignment = VerticalAlignment.Center
                 }
             };
+            Grid.SetRow(header, 0);
+            Grid.SetColumnSpan(header, 2);  // Span across both columns
+            tableGrid.Children.Add(header);
 
+            // Add first data row, first column
+            Border cell1 = new Border
+            {
+                BorderBrush = Brushes.Black,
+                BorderThickness = new Thickness(1),
+                Child = new TextBlock
+                {
+                    Text = "Column 1",
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center
+                }
+            };
+            Grid.SetRow(cell1, 1);
+            Grid.SetColumn(cell1, 0);
+            tableGrid.Children.Add(cell1);
+
+            // Add first data row, second column
+            Border cell2 = new Border
+            {
+                BorderBrush = Brushes.Black,
+                BorderThickness = new Thickness(1),
+                Child = new TextBlock
+                {
+                    Text = "Column 2",
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center
+                }
+            };
+            Grid.SetRow(cell2, 1);
+            Grid.SetColumn(cell2, 1);
+            tableGrid.Children.Add(cell2);
+
+            // Add second data row, first column
+            Border cell3 = new Border
+            {
+                BorderBrush = Brushes.Black,
+                BorderThickness = new Thickness(1),
+                Child = new TextBlock
+                {
+                    Text = "Column 3",
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center
+                }
+            };
+            Grid.SetRow(cell3, 2);
+            Grid.SetColumn(cell3, 0);
+            tableGrid.Children.Add(cell3);
+
+            // Add second data row, second column
+            Border cell4 = new Border
+            {
+                BorderBrush = Brushes.Black,
+                BorderThickness = new Thickness(1),
+                Child = new TextBlock
+                {
+                    Text = "Column 4",
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center
+                }
+            };
+            Grid.SetRow(cell4, 2);
+            Grid.SetColumn(cell4, 1);
+            tableGrid.Children.Add(cell4);
+
+            // Position the table on the Canvas (adjust as needed)
             Canvas.SetLeft(table, 50);
             Canvas.SetTop(table, 50);
 
+            // Add the table to the Canvas
             ERDCanvas.Children.Add(table);
             EnableTableDragging(table);
 
-            // Dynamically resize canvas if needed
+            // Dynamically resize the canvas if needed
             UpdateCanvasSize();
         }
+
         private void EnableTableDragging(UIElement table)
         {
             bool isDragging = false;
